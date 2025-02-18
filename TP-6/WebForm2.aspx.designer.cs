@@ -33,13 +33,13 @@ namespace TP_6.BD_Connection
         protected global::System.Web.UI.WebControls.LinkButton SelectProductsLink;
 
         /// <summary>
-        /// Control RestoreSelectionLink.
+        /// Control btn_RestoreSelection.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton RestoreSelectionLink;
+        protected global::System.Web.UI.WebControls.Button btn_RestoreSelection;
 
         /// <summary>
         /// Control ShowSelectionLink.
@@ -49,5 +49,14 @@ namespace TP_6.BD_Connection
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton ShowSelectionLink;
+
+        /// <summary>
+        /// Control btnConfirmRestore.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnConfirmRestore;
     }
 }

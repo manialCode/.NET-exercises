@@ -92,8 +92,8 @@
             DataTable dt = new DataTable();
             dt.Columns.Add("ID", typeof(string));
             dt.Columns.Add("Nombre", typeof(string));
-            dt.Columns.Add("Proveedor", typeof(string));
             dt.Columns.Add("Precio", typeof(string));
+            dt.Columns.Add("Proveedor", typeof(string));
             return dt;
         }
 

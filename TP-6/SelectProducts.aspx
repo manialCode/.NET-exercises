@@ -86,7 +86,7 @@
 
         <!-- Enlace de regreso -->
         <div class="mt-6 text-center">
-            <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/WebForm2.aspx.cs"
+            <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/WebForm2.aspx"
                 CssClass="text-purple-600 hover:underline text-lg font-semibold">
                 Volver al inicio
             </asp:LinkButton>
