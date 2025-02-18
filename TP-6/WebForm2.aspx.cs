@@ -7,8 +7,9 @@ using System.Web.UI.WebControls;
 
 namespace TP_6.BD_Connection
 {
-    public partial class SelectRow : System.Web.UI.Page
+    public partial class WebForm2 : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
 

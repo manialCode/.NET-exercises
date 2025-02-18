@@ -45,6 +45,16 @@ namespace TP_6.BD_Connection
         {
             return GetTable("Productos", "Select * from Productos");
         }
+                /// <summary>
+        /// Retrieves all products from the database.
+        /// </summary>
+        /// <returns>A <see cref="DataTable"/> containing all products.</returns>
+        public DataTable GetAllProductsWithSupplier()
+        {
+            return GetTable("Productos", "select" +
+                " p.IdProducto as id, p.NombreProducto as Nombre, pr.NombreCompañía as Proveedor, p.PrecioUnidad as Precio " +
+                "from Productos p inner join Proveedores pr on p.IdProveedor = pr.IdProveedor");
+        }
 
 
         /// <summary>

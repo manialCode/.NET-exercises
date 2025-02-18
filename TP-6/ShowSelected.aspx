@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SelectRow.aspx.cs" Inherits="TP_6.BD_Connection.SelectRow" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ShowSelected.aspx.cs" Inherits="TP_6.ShowSelected" %>
 
 <!DOCTYPE html>
 

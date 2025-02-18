@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm2.aspx.cs" Inherits="TP_6.BD_Connection.WebForm2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="RestoreProducts.aspx.cs" Inherits="TP_6.RestoreProducts" %>
 
 <!DOCTYPE html>
 

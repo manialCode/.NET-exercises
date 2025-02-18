@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace TP_6.BD_Connection
+namespace TP_6
 {
-    public partial class ShowSelections : System.Web.UI.Page
+    public partial class RestoreProducts : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -67,9 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BD_Connection\SelectRow.aspx" />
-    <Content Include="BD_Connection\ShowSelections.aspx" />
-    <Content Include="BD_Connection\WebForm2.aspx" />
+    <Content Include="RestoreProducts.aspx" />
+    <Content Include="SelectProducts.aspx" />
+    <Content Include="ShowSelected.aspx" />
+    <Content Include="WebForm2.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
@@ -77,25 +78,32 @@
     <Compile Include="BD_Connection\DataAccess.cs" />
     <Compile Include="BD_Connection\Product.cs" />
     <Compile Include="BD_Connection\ProductsManager.cs" />
-    <Compile Include="BD_Connection\SelectRow.aspx.cs">
-      <DependentUpon>SelectRow.aspx</DependentUpon>
+    <Compile Include="RestoreProducts.aspx.cs">
+      <DependentUpon>RestoreProducts.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="BD_Connection\SelectRow.aspx.designer.cs">
-      <DependentUpon>SelectRow.aspx</DependentUpon>
+    <Compile Include="RestoreProducts.aspx.designer.cs">
+      <DependentUpon>RestoreProducts.aspx</DependentUpon>
     </Compile>
-    <Compile Include="BD_Connection\ShowSelections.aspx.cs">
-      <DependentUpon>ShowSelections.aspx</DependentUpon>
+    <Compile Include="SelectProducts.aspx.cs">
+      <DependentUpon>SelectProducts.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="BD_Connection\ShowSelections.aspx.designer.cs">
-      <DependentUpon>ShowSelections.aspx</DependentUpon>
+    <Compile Include="SelectProducts.aspx.designer.cs">
+      <DependentUpon>SelectProducts.aspx</DependentUpon>
     </Compile>
-    <Compile Include="BD_Connection\WebForm2.aspx.cs">
+    <Compile Include="ShowSelected.aspx.cs">
+      <DependentUpon>ShowSelected.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowSelected.aspx.designer.cs">
+      <DependentUpon>ShowSelected.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="BD_Connection\WebForm2.aspx.designer.cs">
+    <Compile Include="WebForm2.aspx.designer.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />

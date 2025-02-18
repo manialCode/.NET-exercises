@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TP_6.BD_Connection
+namespace TP_6
 {
 
 
-    public partial class ShowSelections
+    public partial class RestoreProducts
     {
 
         /// <summary>
