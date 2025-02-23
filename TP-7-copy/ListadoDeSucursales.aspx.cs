@@ -9,7 +9,11 @@ namespace TP_7_copy
     public partial class ListadoDeSucursales : System.Web.UI.Page
     {
         private readonly SucursalService _sucursalService = new SucursalService();
-
+        /// <summary>
+        /// Método que se ejecuta cuando la página se carga.
+        /// </summary>
+        /// <param name="sender">El origen del evento.</param>
+        /// <param name="e">Los argumentos del evento.</param>
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -22,12 +26,21 @@ namespace TP_7_copy
             }
         }
 
+        /// <summary>
+        /// Carga las sucursales de una provincia específica.
+        /// </summary>
+        /// <param name="provincia">El nombre de la provincia.</param>
         private void CargarSucursales(string provincia)
         {
             lvSucursales.DataSource = _sucursalService.ObtenerSucursalesPorProvincia(provincia);
             lvSucursales.DataBind();
         }
 
+        /// <summary>
+        /// Maneja el evento de comando del botón de selección.
+        /// </summary>
+        /// <param name="sender">El origen del evento.</param>
+        /// <param name="e">Los argumentos del evento de comando.</param>
         protected void BtnSeleccionar_Command(object sender, CommandEventArgs e)
         {
             string[] valores = e.CommandArgument.ToString().Split('|');
@@ -47,6 +60,10 @@ namespace TP_7_copy
             }
         }
 
+        /// <summary>
+        /// Obtiene la tabla de selección de sucursales de la sesión.
+        /// </summary>
+        /// <returns>Una tabla de datos con las sucursales seleccionadas.</returns>
         private DataTable ObtenerTablaSeleccion()
         {
             if (Session["User_Selection"] == null)
@@ -55,6 +72,10 @@ namespace TP_7_copy
             return (DataTable)Session["User_Selection"];
         }
 
+        /// <summary>
+        /// Crea una nueva tabla de sucursales.
+        /// </summary>
+        /// <returns>Una nueva tabla de datos con las columnas ID, Nombre y Descripcion.</returns>
         private DataTable CrearTablaSucursales()
         {
             DataTable dt = new DataTable();
@@ -64,6 +85,13 @@ namespace TP_7_copy
             return dt;
         }
 
+        /// <summary>
+        /// Agrega una sucursal a la tabla de selección.
+        /// </summary>
+        /// <param name="table">La tabla de datos.</param>
+        /// <param name="id">El ID de la sucursal.</param>
+        /// <param name="nombre">El nombre de la sucursal.</param>
+        /// <param name="descripcion">La descripción de la sucursal.</param>
         private void AgregarSucursal(DataTable table, string id, string nombre, string descripcion)
         {
             DataRow row = table.NewRow();
@@ -73,11 +101,22 @@ namespace TP_7_copy
             table.Rows.Add(row);
         }
 
+        /// <summary>
+        /// Verifica si una sucursal ya existe en la tabla de selección.
+        /// </summary>
+        /// <param name="table">La tabla de datos.</param>
+        /// <param name="id">El ID de la sucursal.</param>
+        /// <returns>True si la sucursal ya existe, de lo contrario false.</returns>
         private bool ExisteSucursal(DataTable table, string id)
         {
             return table.AsEnumerable().Any(row => row.Field<string>("ID") == id);
         }
 
+        /// <summary>
+        /// Maneja el evento de comando del botón de provincia.
+        /// </summary>
+        /// <param name="sender">El origen del evento.</param>
+        /// <param name="e">Los argumentos del evento de comando.</param>
         protected void BtnProvincia_Command(object sender, CommandEventArgs e)
         {
             if (e.CommandName == "SelectProvincie")
@@ -88,6 +127,11 @@ namespace TP_7_copy
             }
         }
 
+        /// <summary>
+        /// Maneja el evento de cambio de propiedades de la paginación.
+        /// </summary>
+        /// <param name="sender">El origen del evento.</param>
+        /// <param name="e">Los argumentos del evento de cambio de propiedades de la paginación.</param>
         protected void lvSucursales_PagePropertiesChanging(object sender, PagePropertiesChangingEventArgs e)
         {
             DataPager pager = lvSucursales.FindControl("DataPager1") as DataPager;
@@ -97,6 +141,11 @@ namespace TP_7_copy
             CargarSucursales(provincia);
         }
 
+        /// <summary>
+        /// Maneja el evento de clic del botón de búsqueda.
+        /// </summary>
+        /// <param name="sender">El origen del evento.</param>
+        /// <param name="e">Los argumentos del evento.</param>
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
             string nombre = txtNombreSucursal.Text.Trim();
