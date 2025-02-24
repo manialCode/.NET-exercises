@@ -13,7 +13,7 @@ namespace TP_5
     /// </summary>
     public class ConexionBD
     {
-        private string ruta = "Data Source=DESKTOP-5CKDGIR\\SQLEXPRESS;Initial Catalog=BDSucursales;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
+        private string ruta = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=BDSucursales;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
 
         /// <summary>
         /// Ejecuta una consulta SQL que no devuelve resultados y devuelve el número de filas afectadas.
