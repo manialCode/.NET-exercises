@@ -12,7 +12,7 @@ namespace TP_7.ConxionDB
     /// </summary>
     public class DataAccess
     {
-        private readonly string _connectionString = "Data Source=DESKTOP-5CKDGIR\\SQLEXPRESS;Initial Catalog=Neptuno;Integrated Security=True;Encrypt=False";
+        private readonly string _connectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Neptuno;Integrated Security=True;Encrypt=False";
 
         /// <summary>
         /// Creates and opens a database connection.
