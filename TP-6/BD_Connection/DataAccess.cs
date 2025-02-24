@@ -12,7 +12,7 @@ namespace TP_6.BD_Connection
         /// <summary>
         /// Connection string for the database.
         /// </summary>
-        private String cnnString = "Data Source=DESKTOP-5CKDGIR\\SQLEXPRESS;Initial Catalog=Neptuno;Integrated Security=True;Encrypt=False";
+        private String cnnString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Neptuno;Integrated Security=True;Encrypt=False";
 
         /// <summary>
         /// Gets a open connection to the database.
