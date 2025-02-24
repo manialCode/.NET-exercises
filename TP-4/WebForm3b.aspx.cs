@@ -10,7 +10,7 @@ namespace TP_4
 {
     public partial class WebForm3b : System.Web.UI.Page
     {
-        private SqlConnection con = new SqlConnection("Data Source=DESKTOP-5CKDGIR\\SQLEXPRESS;Initial Catalog=Libreria;Integrated Security=True;Encrypt=True");
+        private SqlConnection con = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial Catalog=Libreria;Integrated Security=True;Encrypt=True");
         /// <summary>
         /// Obtiene o establece la conexión SQL.
         /// </summary>
